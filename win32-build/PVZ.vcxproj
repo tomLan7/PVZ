@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D287CEC-FFE3-3C4D-8CDC-09CE6C1BC706}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>PVZ</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">B:\project\PVZ\win32-build\bin\PVZ\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PVZ.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PVZ</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">B:\project\PVZ\win32-build\bin\PVZ\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PVZ.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PVZ</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">B:\project\PVZ\win32-build\bin\PVZ\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">PVZ.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">PVZ</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">B:\project\PVZ\win32-build\bin\PVZ\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">PVZ.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">PVZ</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(IncludePath);$(SourcePath)</SourcePath>
+    <LibraryPath>B:\project\PVZ\FairyGUIlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\FairyGUIlib\Classes;.;..\Classes;..\cocos2d\cocos\audio\include;..\cocos2d;..\cocos2d\cocos;..\cocos2d\extensions;..\cocos2d\cocos\platform;..\cocos2d\cocos\editor-support;..\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <PrecompiledHeaderFile>PVZHeader.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/uv/prebuilt/win32/uv.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/websockets/prebuilt/win32/websockets.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/curl/prebuilt/win32/libcurl.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll B:/project/PVZ/win32-build/bin/PVZ/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>librecast.lib;libfairygui.lib;lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>B:/project/PVZ/win32-build/Debug/PVZ.lib</ImportLibrary>
+      <ProgramDataBaseFile>B:/project/PVZ/win32-build/bin/PVZ/Debug/PVZ.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll B:/project/PVZ/win32-build/bin/PVZ/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll B:/project/PVZ/win32-build/bin/PVZ/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/uv/prebuilt/win32/uv.dll B:/project/PVZ/win32-build/bin/PVZ/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/websockets/prebuilt/win32/websockets.dll B:/project/PVZ/win32-build/bin/PVZ/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/curl/prebuilt/win32/libcurl.dll B:/project/PVZ/win32-build/bin/PVZ/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll B:/project/PVZ/win32-build/bin/PVZ/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll B:/project/PVZ/win32-build/bin/PVZ/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll B:/project/PVZ/win32-build/bin/PVZ/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll B:/project/PVZ/win32-build/bin/PVZ/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll B:/project/PVZ/win32-build/bin/PVZ/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll B:/project/PVZ/win32-build/bin/PVZ/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll B:/project/PVZ/win32-build/bin/PVZ/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll B:/project/PVZ/win32-build/bin/PVZ/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>B:/project/PVZ/win32-build/Release/PVZ.lib</ImportLibrary>
+      <ProgramDataBaseFile>B:/project/PVZ/win32-build/bin/PVZ/Release/PVZ.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/uv/prebuilt/win32/uv.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/websockets/prebuilt/win32/websockets.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/curl/prebuilt/win32/libcurl.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>B:/project/PVZ/win32-build/MinSizeRel/PVZ.lib</ImportLibrary>
+      <ProgramDataBaseFile>B:/project/PVZ/win32-build/bin/PVZ/MinSizeRel/PVZ.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>B:\project\PVZ\Classes;B:\project\PVZ\cocos2d\cocos\audio\include;B:\project\PVZ\cocos2d;B:\project\PVZ\cocos2d\cocos;B:\project\PVZ\cocos2d\extensions;B:\project\PVZ\cocos2d\cocos\platform;B:\project\PVZ\cocos2d\cocos\editor-support;B:\project\PVZ\cocos2d\cocos\base;B:\project\PVZ\cocos2d\cocos\platform\win32;B:\project\PVZ\cocos2d\external\recast\..;B:\project\PVZ\cocos2d\external\tinyxml2\.;B:\project\PVZ\cocos2d\external\xxhash\.;B:\project\PVZ\cocos2d\external\xxtea\.;B:\project\PVZ\cocos2d\external\clipper\.;B:\project\PVZ\cocos2d\external\edtaa3func\.;B:\project\PVZ\cocos2d\external\ConvertUTF\.;B:\project\PVZ\cocos2d\external\poly2tri\..;B:\project\PVZ\cocos2d\external\md5\..;B:\project\PVZ\cocos2d\external\unzip\.;B:\project\PVZ\cocos2d\external\Box2D\include;B:\project\PVZ\cocos2d\external\chipmunk\include;B:\project\PVZ\cocos2d\external\freetype2\include\win32\freetype2;B:\project\PVZ\cocos2d\external\bullet\include;B:\project\PVZ\cocos2d\external\bullet\include\bullet;B:\project\PVZ\cocos2d\external\jpeg\include\win32;B:\project\PVZ\cocos2d\external\openssl\include\win32;B:\project\PVZ\cocos2d\external\uv\include;B:\project\PVZ\cocos2d\external\webp\include\win32;B:\project\PVZ\cocos2d\external\websockets\include\win32;B:\project\PVZ\cocos2d\external\curl\include\win32;B:\project\PVZ\cocos2d\external\png\include\win32;B:\project\PVZ\cocos2d\external\win32-specific\gles\include\OGLES;B:\project\PVZ\cocos2d\external\win32-specific\icon\include;B:\project\PVZ\cocos2d\external\win32-specific\MP3Decoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OggDecoder\include;B:\project\PVZ\cocos2d\external\win32-specific\OpenalSoft\include;B:\project\PVZ\cocos2d\external\glfw3\include\win32;B:\project\PVZ\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/uv/prebuilt/win32/uv.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/websockets/prebuilt/win32/websockets.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/curl/prebuilt/win32/libcurl.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"G:\ide\Microsoft Visual Studio\2017\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different B:/project/PVZ/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>B:/project/PVZ/win32-build/RelWithDebInfo/PVZ.lib</ImportLibrary>
+      <ProgramDataBaseFile>B:/project/PVZ/win32-build/bin/PVZ/RelWithDebInfo/PVZ.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\db\shell.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\Classes\db\sqlite3.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="BaseScene.cpp" />
+    <ClCompile Include="GardenScene.cpp" />
+    <ClCompile Include="Life.cpp" />
+    <ClCompile Include="MainScene.cpp" />
+    <ClCompile Include="PVZBase.cpp" />
+    <ClCompile Include="PVZDAO.cpp" />
+    <ClInclude Include="..\Classes\CanContact.h" />
+    <ClInclude Include="..\Classes\Card.h" />
+    <ClInclude Include="..\Classes\CardBar.h" />
+    <ClInclude Include="..\Classes\CreateFromCard.h" />
+    <ClInclude Include="..\Classes\Pea.h" />
+    <ClInclude Include="..\Classes\Peashooter.h" />
+    <ClInclude Include="..\Classes\Plant.h" />
+    <ClInclude Include="..\Classes\playerAgent.h" />
+    <ClInclude Include="..\Classes\Projectile.h" />
+    <ClInclude Include="..\Classes\PVZHeader.h" />
+    <ClInclude Include="..\Classes\PVZUtil.h" />
+    <ClInclude Include="..\Classes\SelectAble.h" />
+    <ClInclude Include="..\Classes\Sun.h" />
+    <ClInclude Include="..\Classes\Sunflower.h" />
+    <ClInclude Include="..\Classes\UniformLinearProjectile.h" />
+    <ClInclude Include="..\Classes\Unit.h" />
+    <ClInclude Include="..\Classes\Zombies.h" />
+    <ClInclude Include="B:\project\PVZ\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\BattlefieldScene.h" />
+    <ClInclude Include="B:\project\PVZ\proj.win32\main.h" />
+    <ClInclude Include="B:\project\PVZ\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\CanContact.cpp" />
+    <ClCompile Include="..\Classes\Card.cpp" />
+    <ClCompile Include="..\Classes\CardBar.cpp" />
+    <ClCompile Include="..\Classes\CreateFromCard.cpp" />
+    <ClCompile Include="..\Classes\Pea.cpp" />
+    <ClCompile Include="..\Classes\Peashooter.cpp" />
+    <ClCompile Include="..\Classes\Plant.cpp" />
+    <ClCompile Include="..\Classes\playerAgent.cpp" />
+    <ClCompile Include="..\Classes\Projectile.cpp" />
+    <ClCompile Include="..\Classes\PVZHeader.cpp" />
+    <ClCompile Include="..\Classes\PVZUtil.cpp" />
+    <ClCompile Include="..\Classes\SelectAble.cpp" />
+    <ClCompile Include="..\Classes\Sun.cpp" />
+    <ClCompile Include="..\Classes\Sunflower.cpp" />
+    <ClCompile Include="..\Classes\UniformLinearProjectile.cpp" />
+    <ClCompile Include="..\Classes\Unit.cpp" />
+    <ClCompile Include="..\Classes\Zombies.cpp" />
+    <ClCompile Include="B:\project\PVZ\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\BattlefieldScene.cpp" />
+    <ClCompile Include="B:\project\PVZ\proj.win32\main.cpp" />
+    <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="GardenScene.h" />
+    <ClInclude Include="Life.h" />
+    <ClInclude Include="MainScene.h" />
+    <ClInclude Include="PVZBase.h" />
+    <ClInclude Include="PVZDAO.h" />
+    <ResourceCompile Include="B:\project\PVZ\proj.win32\game.rc" />
+    <ClInclude Include="B:\project\PVZ\Resources\CloseNormal.png" />
+    <ClInclude Include="B:\project\PVZ\Resources\CloseSelected.png" />
+    <ClInclude Include="B:\project\PVZ\Resources\HelloWorld.png" />
+    <ClInclude Include="B:\project\PVZ\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="B:\project\PVZ\Resources\fonts\arial.ttf" />
+    <ClInclude Include="B:\project\PVZ\Resources\res\.gitkeep" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="B:\project\PVZ\win32-build\ZERO_CHECK.vcxproj">
+      <Project>{DFE6C8B4-D4CE-3E5A-B1F5-9041976A997D}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\SYNC_RESOURCE-PVZ.vcxproj">
+      <Project>{D499FAED-D3FC-3159-A073-BAAF88960417}</Project>
+      <Name>SYNC_RESOURCE-PVZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{6C9D55FB-4F45-3B08-BF9A-87C9BC944462}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{4334F0B9-108B-3DFB-AA73-1A862C7CF432}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{7352D635-25B1-3B01-8637-C085B31A9840}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{A4142563-6A8E-3D6D-9E39-887627C355E3}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{B3070A3F-46AB-3005-9EC0-915FACAE6898}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{6A45591F-D8B3-3603-8FF2-13EE7A056A6B}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{FEA4060C-9545-3FE4-A3DC-11071A7A63DA}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{2B850256-8C9B-3BB5-AD57-6E100A8777F3}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{0276DC6B-7F5B-3D88-9E11-5E18ACCD188B}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{979F8547-D08C-3CED-8BF9-1F30F9332732}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{41082565-179F-32D2-8305-BF4005111D05}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="B:\project\PVZ\win32-build\engine\external\external.vcxproj">
+      <Project>{F8BCE7E4-225C-3C79-B708-F29E4C7AA4E2}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

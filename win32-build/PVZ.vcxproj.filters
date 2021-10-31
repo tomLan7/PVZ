@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="B:\project\PVZ\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="B:\project\PVZ\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CardBar.cpp">
+      <Filter>Source Files\CardSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Card.cpp">
+      <Filter>Source Files\CardSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Plant.cpp">
+      <Filter>Source Files\Plants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\playerAgent.cpp">
+      <Filter>Source Files\PlayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Unit.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SelectAble.cpp">
+      <Filter>Source Files\PlayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CreateFromCard.cpp">
+      <Filter>Source Files\CardSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sun.cpp">
+      <Filter>Source Files\PlayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PVZHeader.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Peashooter.cpp">
+      <Filter>Source Files\Plants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CanContact.cpp">
+      <Filter>Source Files\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Projectile.cpp">
+      <Filter>Source Files\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UniformLinearProjectile.cpp">
+      <Filter>Source Files\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Pea.cpp">
+      <Filter>Source Files\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Zombies.cpp">
+      <Filter>Source Files\Zombies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BattlefieldScene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="PVZBase.cpp" />
+    <ClCompile Include="MainScene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Life.cpp">
+      <Filter>Source Files\kit</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseScene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PVZUtil.cpp">
+      <Filter>Source Files\kit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sunflower.cpp">
+      <Filter>Source Files\Plants</Filter>
+    </ClCompile>
+    <ClCompile Include="GardenScene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\db\sqlite3.c">
+      <Filter>Source Files\SQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\db\shell.c">
+      <Filter>Source Files\SQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="PVZDAO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="B:\project\PVZ\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="B:\project\PVZ\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="B:\project\PVZ\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="B:\project\PVZ\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="B:\project\PVZ\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="B:\project\PVZ\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="B:\project\PVZ\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="B:\project\PVZ\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="B:\project\PVZ\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Card.h">
+      <Filter>Header\CardSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CardBar.h">
+      <Filter>Header\CardSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CreateFromCard.h">
+      <Filter>Header\CardSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PVZHeader.h">
+      <Filter>Header\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Unit.h">
+      <Filter>Header\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Plant.h">
+      <Filter>Header\Plants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\playerAgent.h">
+      <Filter>Header\PlayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sun.h">
+      <Filter>Header\PlayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SelectAble.h">
+      <Filter>Header\PlayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sunflower.h">
+      <Filter>Header\Plants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Peashooter.h">
+      <Filter>Header\Plants</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CanContact.h">
+      <Filter>Header\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Projectile.h">
+      <Filter>Header\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UniformLinearProjectile.h">
+      <Filter>Header\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Pea.h">
+      <Filter>Header\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Zombies.h">
+      <Filter>Header\Zombies</Filter>
+    </ClInclude>
+    <ClInclude Include="PVZBase.h" />
+    <ClInclude Include="..\Classes\BattlefieldScene.h">
+      <Filter>Header\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>Header\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Life.h">
+      <Filter>Header\kit</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseScene.h">
+      <Filter>Header\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PVZUtil.h">
+      <Filter>Header\kit</Filter>
+    </ClInclude>
+    <ClInclude Include="GardenScene.h">
+      <Filter>Header\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="PVZDAO.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="B:\project\PVZ\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{666763A8-671A-3358-AD1E-EDBD5BE53C4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{6EF29FBB-2704-3902-9F43-C9B9C5D86A24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{87D015CB-81DB-3195-AA9D-6B023219EFEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FA605803-575B-36D3-8DB7-B5E56E47676C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{B8551A97-D9AE-35EB-AB97-99DB1FAF984E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{2B38182F-68ED-3FB4-9D25-870F2D225FBE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CardSystem">
+      <UniqueIdentifier>{0a8f5cae-06f9-48f0-9a86-fa167d7734d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{aad37de8-073d-4a4f-ad4d-33116064fce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{29b09e7a-fb2c-4545-a3ae-0d241bf58368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\CardSystem">
+      <UniqueIdentifier>{ab9e39bc-ec9c-4aab-a886-2785b32143bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Base">
+      <UniqueIdentifier>{8c71c2ec-01c6-44c0-96a8-e41130f5059f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\PlayerSystem">
+      <UniqueIdentifier>{19cd3628-ce3f-427c-b110-6426fb450f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Zombies">
+      <UniqueIdentifier>{3576e5d3-e125-49e4-8304-689ea33c3ec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Plants">
+      <UniqueIdentifier>{db57dc7e-7d22-42c2-904c-e154e56900b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Plants">
+      <UniqueIdentifier>{0c6e519c-4619-4f26-ac71-65c268d2a9a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PlayerSystem">
+      <UniqueIdentifier>{b6a4a8ed-ed13-4f36-a4b7-ebc9c7bd763a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Zombies">
+      <UniqueIdentifier>{d9470840-f28b-4273-bafd-f80a04599908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\collision">
+      <UniqueIdentifier>{75db3d98-d3ea-4875-a0dd-260accc13cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Collision">
+      <UniqueIdentifier>{d73aabeb-f754-45ff-92a0-3a111de05fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\scene">
+      <UniqueIdentifier>{5691f9f1-65c6-46d2-a558-03ea4f5e1372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene">
+      <UniqueIdentifier>{39dc8db9-74bd-41cf-aa80-237d556cd7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\kit">
+      <UniqueIdentifier>{1c089715-e8c4-41d3-be6c-85809e48f22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kit">
+      <UniqueIdentifier>{a626e123-96e1-42c7-b9e5-f53b76e83610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SQLite">
+      <UniqueIdentifier>{8c771715-df5a-46d8-b12f-a920e432c951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\SQLite">
+      <UniqueIdentifier>{625f757f-e6bc-425d-a2c7-ca33cd140935}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
